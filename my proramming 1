@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	struct books
+	{
+		char title[20];
+		char author[15];
+		int pages;
+		float  prices;
+	};
+	struct books b[2];
+	int i;
+	for(int i=0;i<2;i++)
+	{
+		cout<<"enter title,author,prices";
+		cin>>b[i].title>>b[i].author>>b[i].pages>>b[i].prices;
+	}
+	cout<<"record of books is"<<endl;
+	for(i=0;i<2;i++)
+	{
+		cout<<b[i].title<<"\t"<<b[i].author<<"\t"<<b[i].pages<<b[i].prices<<endl;
+	}
+	}
+	
