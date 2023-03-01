@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+void sqr (int &a,int &b);
+int main()
+{
+	int a;
+	cin>>a;
+	int b;
+	cin>>b;
+	sqr(a,b);
+	return 0;
+	system("pause");
+}
+void sqr (int &a,int &b)
+{
+a=a*a;
+b=b*b;
+cout<<"enter the square of first number is"<<a<<endl;
+cout<<"enter the square of second number is"<<b<<endl;
+}
